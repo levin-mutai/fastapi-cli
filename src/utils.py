@@ -14,6 +14,3 @@ def createFolder(dir: str):
             raise OSError
     except OSError:
         print(colored(f"Error: Creating directory {dir}. ", "red"))
-
-
-createFolder("/home/sav4ner/dev/fastapi-cli")
