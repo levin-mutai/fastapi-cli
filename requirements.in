@@ -8,4 +8,6 @@ celery
 PyJWT
 psycopg2-binary
 SQLAlchemy
+termcolor
+colorama
 
