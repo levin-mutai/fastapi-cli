@@ -1,0 +1,11 @@
+fastapi[all]
+uvicorn[standard]
+email_validator
+ujson
+httpx
+jinja2
+celery
+PyJWT
+psycopg2-binary
+SQLAlchemy
+
