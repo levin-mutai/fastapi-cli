@@ -1,13 +1,12 @@
 import os
-import asyncio
-from colorama import init, Fore
+from colorama import init
 from termcolor import colored
 
 init()
 
 
 async def createFolder(dir: str) -> bool:
-    """A coroutine to help create a folder by first checking if the folder already exists and
+    """A async function to help create a folder by first checking if the folder already exists and
     if not it creates it and returns True. If it fails it returns false and araises an OSError"""
     try:
         if not os.path.exists(dir):
@@ -19,4 +18,8 @@ async def createFolder(dir: str) -> bool:
 
     except OSError:
         print(colored(f"Error: Creating directory {dir}. ", "red"))
+        return False
+
+    except Exception as err:
+        print(colored(f"Error: Creating directory {dir} due to {err!r}", "red"))
         return False
