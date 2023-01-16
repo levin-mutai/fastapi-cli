@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fastapi_gen.egg-info/PKG-INFO
+fastapi_gen.egg-info/SOURCES.txt
+fastapi_gen.egg-info/dependency_links.txt
+fastapi_gen.egg-info/top_level.txt
+src/__init__.py
+src/utils.py
+src/coroutines/__init__.py
+src/coroutines/filemanipulation.py
+src/scripts/__init__.py

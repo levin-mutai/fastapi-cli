@@ -16,7 +16,7 @@ loop = asyncio.new_event_loop()
 
 def run():
     loop.run_until_complete(
-        create_folder_with_multiple_files("src/dick", ["salome.py", "Rency.py"])
+        create_folder_with_multiple_files("src/check", ["file.py", "file1.py"])
     )
 
 
