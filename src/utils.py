@@ -1,4 +1,5 @@
 import os
+import platform
 from colorama import init
 from termcolor import colored
 
@@ -23,3 +24,8 @@ async def createFolder(dir: str) -> bool:
     except Exception as err:
         print(colored(f"Error: Creating directory {dir} due to {err!r}", "red"))
         return False
+
+
+def check_os():
+    """used to check the type of os being used"""
+    return platform.system()
