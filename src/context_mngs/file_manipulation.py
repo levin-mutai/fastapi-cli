@@ -32,7 +32,7 @@ class ChangeDir:
 
         elif dir_to_main > 1:
 
-            for i in range(n):
+            for i in range(dir_to_main):
                 where_to += "/.."
 
             os.chdir(where_to)
