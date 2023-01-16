@@ -29,3 +29,9 @@ async def createFolder(dir: str) -> bool:
 def check_os():
     """used to check the type of os being used"""
     return platform.system()
+
+
+def pwd():
+    """used to check the current working directory"""
+    print(os.getcwd())
+    return os.getcwd()
