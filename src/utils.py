@@ -33,6 +33,3 @@ def pwd() -> str:
     """used to check the current working directory"""
     print(os.getcwd())
     return os.getcwd()
-
-
-createFolder("./test")

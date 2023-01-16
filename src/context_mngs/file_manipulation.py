@@ -20,9 +20,9 @@ class ChangeDir:
 
     def __enter__(self) -> bool:
         os.chdir(self.dir)
-        return True
+        pass
 
-    def __exit__(self) -> None:
+    def __exit__(self, *args, **kwargs) -> None:
         dir_to_main = len(self.dir.split("/"))
         where_to = ".."
 
