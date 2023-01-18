@@ -34,3 +34,8 @@ def pwd() -> str:
     """used to check the current working directory"""
     print(os.getcwd())
     return os.getcwd()
+
+
+def copy_file(source: str, dest: str):
+    pass
+    # TODO: add a file copy function.
